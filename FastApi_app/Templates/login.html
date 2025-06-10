@@ -1,14 +1,13 @@
-{% extends "base.html" %}
-
-{% block title %} login {% endblock %}
-
-{% block content %} 
+{% extends "base.html" %} {% block title %} login {% endblock %} {% block
+content %}
 <form action="/login" method="post">
-    <input type="text" name="username" placeholder="Username" required><br>
-    <input type="password" name="password" placeholder="Password" required> <br> 
-    <button type="submit">Login</button>
+  <input type="text" name="username" placeholder="Username" required /><br />
+  <input type="password" name="password" placeholder="Password" required />
+  <br />
+  <button type="submit">Login</button>
 </form>
 
 {% if error %}
-<p style="color: red;"> {{error}} </p>
-{% endblock %}
+<p style="color: red">{{error}}</p>
+
+{% endif %} {% endblock %}

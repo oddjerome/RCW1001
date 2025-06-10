@@ -22,12 +22,12 @@ templates = Jinja2Templates(directory=templates_dir)
 
 
 #fichier static
-app.mount("static",StaticFiles(directory=stactic_dir))
+app.mount("/static",StaticFiles(directory=stactic_dir))
 
 # Monter l'application Dash sours chemin / Dashbaoard
 app.mount("/dashboard", WSGIMiddleware(app_dash.server))
 
-user = {"admin","123"}
+user = {"admin":"123"}
 
 @app.get("/")
 async def home_page(request:Request):
