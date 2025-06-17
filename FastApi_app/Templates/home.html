@@ -1,8 +1,24 @@
-{% extends "base.html" %}
-
-{% block title %} HOME {% endblock %}
-
-{% block content %} 
+{% extends "base.html" %} {% block title %} HOME {% endblock %} {% block content
+%}
 <h1>HOME</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit quisquam amet assumenda sapiente rerum, consectetur ipsa, placeat, iste illum id. Eos quisquam alias aut quos nobis autem laboriosam quo expedita, maxime exercitationem aliquid pariatur debitis praesentium doloremque laborum, delectus, nostrum corrupti in inventore repellendus odit! Earum officia, ut reprehenderit voluptate, quo dicta, eligendi quos voluptates enim at sequi possimus. Ullam nesciunt officia quisquam atque sequi? Doloribus et illo ullam dolor sint debitis dolorum facilis beatae similique commodi veritatis, temporibus dolores totam enim necessitatibus velit corrupti impedit facere iste animi? Quaerat odit, eius temporibus tempore natus laboriosam praesentium distinctio illo?</p>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit
+  quisquam amet assumenda sapiente rerum, consectetur ipsa, placeat, iste illum
+  id. Eos quisquam alias aut quos nobis autem laboriosam quo expedita, maxime
+  exercitationem aliquid pariatur debitis praesentium doloremque laborum,
+  delectus, nostrum corrupti in inventore repellendus odit! Earum officia, ut
+  reprehenderit voluptate, quo dicta, eligendi quos voluptates enim at sequi
+  possimus. Ullam nesciunt officia quisquam atque sequi? Doloribus et illo ullam
+  dolor sint debitis dolorum facilis beatae similique commodi veritatis,
+  temporibus dolores totam enim necessitatibus velit corrupti impedit facere
+  iste animi? Quaerat odit, eius temporibus tempore natus laboriosam praesentium
+  distinctio illo?
+</p>
+
+<h3>Aujourd'hui est {{info.date}} et il est {{info.time}}</h3>
+
+<p>City : {{info.weather.city}}</p>
+<p>Temperature : {{info.weather.temperature}}</p>
+<p>Description: {{info.weather.description}}</p>
+
 {% endblock %}
