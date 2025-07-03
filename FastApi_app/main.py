@@ -51,10 +51,10 @@ def get_external_info():
             } 
     }
 
-@app.get("/api/info")
-async def get_info():
-    info = get_external_info()
-    return info
+# @app.get("/api/info")
+# async def get_info():
+#     info = get_external_info()
+#     return info
 
 @app.get("/")
 async def home_page(request:Request):
